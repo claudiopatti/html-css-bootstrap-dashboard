@@ -37,11 +37,11 @@ responsive
 
 @media screen and (min-width: 576px) {
     .main_left {
-        width: 100px;
+        width: 50px;
     }
     
     .main_right {
-        width: calc(100% - 100px);
+        width: calc(100% - 50px);
     }
     
 }
