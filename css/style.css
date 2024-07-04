@@ -31,6 +31,16 @@ main
     line-height: 25px;
 }
 
+.img_tabella {
+    width: 30px;
+    border-radius: 50%;
+}
+
+.icone_tabella {
+    border: 1px solid black;
+    padding: 5px;
+}
+
 /* 
 responsive
 */
