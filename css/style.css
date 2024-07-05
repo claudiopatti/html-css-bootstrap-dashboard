@@ -10,10 +10,17 @@ header
     height: 50px;
 }
 
+header {
+    height: 60px;
+}
+
 
 /* 
 main  
 */
+main {
+    height: calc(100vh - 60px);
+}
 
 .background_img {
     background-image: url(../img/sidebar-bg.png);
@@ -38,7 +45,16 @@ main
 
 .icone_tabella {
     border: 1px solid black;
-    padding: 5px;
+    padding: 3px;
+    margin-bottom: 3px;
+}
+
+/*
+ hover  
+*/
+
+.search_aside:hover {
+     background-color: gray;
 }
 
 /* 
@@ -46,18 +62,20 @@ responsive
 */
 
 @media screen and (min-width: 576px) {
-    .main_left {
-        width: 50px;
-    }
+     .main_left {
+        width: 60px;
+    } 
     
     .main_right {
-        width: calc(100% - 50px);
-    }
+        width: calc(100% - 60px);
+    } 
+
+    
     
 }
 
 @media screen and (min-width: 768px) {
-    
+   
     
 }
 
