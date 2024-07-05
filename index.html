@@ -127,7 +127,89 @@
                         <div class="col-sm-12 col-md-4 col-lg-2 order-md-3 pt-3 align-items-center ">
                             <div class="d-flex align-items-center ">
                                 <h6 class="pe-3">Nuovo studente</h6>
-                                <button  class="btn btn-primary border-white "><i class="bi bi-plus-lg"></i></button>
+                                <button  class="btn btn-primary border-white " data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="bi bi-plus-lg"></i></button>
+                                
+                                <div class="offcanvas_upgrade offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                                    <div class="offcanvas-header">
+                                      <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
+                                      <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                                    </div>
+                                    <div class="offcanvas-body">
+                                        <form>
+                                            <div class="row">
+                                                <div class="mb-3 col-sm-12 col-md-6">
+                                                    <label for="exampleInputtext1" class="form-label">Name</label>
+                                                    <input type="text" class="form-control" id="exampleInputtext1" aria-describedby="nameHelp">
+                                                </div>
+                                                <div class="mb-3 col-sm-12 col-md-6">
+                                                    <label for="exampleInputtext2" class="form-label">Surname</label>
+                                                    <input type="text" class="form-control" id="exampleInputtext2" aria-describedby="surnameHelp">
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="col-sm-12 col-md-6">
+                                                    <label for="exampleInputtext3" class="form-label d-block">Email</label>
+                                                    <div class="input-group mb-3">
+                                                        <span class="input-group-text" id="basic-addon1">@</span>
+                                                        <input type="text" class="form-control" placeholder="" aria-label="Username" id="exampleInputtext3" aria-describedby="emailhelp">
+                                                    </div>
+
+                                                </div>
+                                                <div class="mb-3 col-sm-12 col-md-6">
+                                                  <label for="exampleInputPassword1" class="form-label">Password</label>
+                                                  <input type="password" class="form-control" id="exampleInputPassword1">
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="mb-3 col-">
+                                                    <label for="exampleInputtext4" class="form-label">Address</label>
+                                                    <input type="text" class="form-control" id="exampleInputtext4" aria-describedby="addressHelp">
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="mb-3 col-sm-12 col-md-6">
+                                                    <label for="exampleInputtext5" class="form-label">City</label>
+                                                    <input type="text" class="form-control" id="exampleInputtext5" aria-describedby="cityHelp">
+                                                </div>
+                                                <div class="mb-3 col-sm-12 col-md-4">
+                                                    <label for="exampleInputtext6" class="form-label">Country</label>
+                                                    <select class="form-select" aria-label="Default select example" id="exampleInputtext6" aria-describedby="countryHelp">
+                                                        <option selected>Scegli.....</option>
+                                                        <option value="1">Italy</option>
+                                                        <option value="2">Germany</option>
+                                                        <option value="3">Spanish</option>
+                                                    </select>
+                                                </div>
+                                                <div class="mb-3 col-sm-12 col-md-2">
+                                                    <label for="exampleInputtext7" class="form-label">Cap</label>
+                                                    <input type="text" class="form-control" id="exampleInputtext7" aria-describedby="capHelp">
+                                                </div>
+
+                                            </div>
+
+                                            <div class="row">
+                                                <div class="mb-3">
+                                                    <label for="formFileMultiple" class="form-label">Foto</label>
+                                                    <input class="form-control" type="file" id="formFileMultiple" aria-describedby="fotoHelp" multiple>
+                                                </div>
+                                            </div>
+
+                                            <div class="mb-3 form-check">
+                                              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                              <label class="form-check-label" for="exampleCheck1">Seleziona per proseguire</label>
+                                            </div>
+                                            <button type="submit" class="btn btn-primary">Salva</button>
+                                            <button type="submit" class="btn btn-warning">Svuota</button>
+                                        </form>
+                                    </div>
+                                  </div>
+                            
                             </div>
 
                         </div>
